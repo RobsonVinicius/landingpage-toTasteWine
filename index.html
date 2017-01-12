@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>SPA</title>
+
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+    <link href='https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'> 
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    
+ </head>
+	 <body>
+	 	<header class="header" id="inicio">
+	 		<h1><img src="imagens/logo.png" alt="Spa - Bem estar"></h1>
+	 	</header>
+
+	 	<nav class="navbar">
+	 		<a class="scroll" href="#vinhos">Vinhos</a>
+	 		<a class="scroll" href="#localizacao">Localização</a>
+	 		<a class="scroll" href="#investimento">Investimento</a>
+		</nav>
+
+	 	<section class="content who" id="quem">
+
+	 		<h2 class="title">Quem Somos</h2>
+
+	 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+	 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumexercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+
+	 	</section>
+
+	 	<section class="content tratamentos" id="vinhos">
+	 		<h2 class="title">Vinhos</h2>
+	 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+	 		<ul class="list-tratamentos">
+	 			<li>
+	 				<figure>
+		 				<img src="imagens/vinhos-basicos.png"> <!-- falta a imagem -->
+		 				<figcaption>Básicos</figcaption>
+	 				</figure>
+	 			</li>
+	 			<li>
+	 				<figure>
+		 				<img src="imagens/classicos.png"> <!-- falta a imagem -->
+		 				<figcaption>Clássicos</figcaption> 
+	 				</figure>
+	 			</li>
+	 			<li>
+	 				<figure>
+		 				<img src="imagens/premium.png"> <!-- falta a imagem -->
+		 				<figcaption>Premium</figcaption>
+	 				</figure>
+	 			</li>
+	 		</ul>
+	 	</section>
+
+	 	<section class="content tarifas" id="investimento">
+	 		<div class="contain">
+	 			<h2 class="title">Investimento</h2>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+	 			<p>Lorem ipsum dolor sit amet,</p>
+	 			<a href="" class="btn">Contate-nos</a>
+	 		</div>
+	 	</section>
+
+	 	<section class="content localizacao" id="localizacao">
+	 		<h2 class="title">Localização</h2>
+	 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8859784100005!2d-49.240964449136364!3d-25.442075283703296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce500d5e96635%3A0x1a2d5ec5fddc5654!2sJardim+Bot%C3%A2nico+de+Curitiba!5e0!3m2!1spt-BR!2sbr!4v1484178134617" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+	 	</section>
+
+	 	
+	 </body>
+
+	<script>
+	// script do scroll suave,adicionar a classe ".scroll" ao menu de navegação para ser funcional
+		jQuery(document).ready(function($) { 
+		    $(".scroll").click(function(event){        
+		        event.preventDefault();
+		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+		   });
+		});
+	</script>	
+ </html>
